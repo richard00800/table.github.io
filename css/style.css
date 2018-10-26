@@ -1,0 +1,336 @@
+body{
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+	box-sizing:border-box;
+	overflow-x:none; 
+	background:rgba(30,30,30, 1.0) url(../img/m.gif) no-repeat bottom ;
+	background-attachment:fixed;
+	background-size:cover;
+}
+a{
+	text-decoration: none;
+}
+/*headindex*/
+.desctop{
+	background-color: rgba(30,30,30, 1.0);
+ 	box-shadow: 0 0 150px rgba(152, 132, 232, 1.0);
+ 	border-bottom: 2px solid rgba(152, 132, 232, 0.55);
+}
+.logo{
+ 	background-repeat: no-repeat;
+    background-position:85% 100%;
+    background-size: 70px 70px;
+    background-image: url(../img/ico/marioRG.svg);
+}
+.b{
+	background-position:1% 10%;
+	background-size: 50px 50px;
+    background-image: url(../img/ico/b.png);
+}
+
+.a{
+	background-position:0% 10%;
+	background-size: 50px 50px;
+    background-image: url(../img/ico/a.png);
+}
+.nav{
+	width: 100%;
+	margin: 0 auto;
+}
+.nav-list{
+	margin:0;
+	padding:0;
+	list-style:none;	
+	padding-left: 20px;
+}
+.nav-list > li{ 	 
+ 	 position: relative;
+ 	 display: inline-block;
+}
+.desctop .nav-list a{
+	display: block;
+	color:white;
+	font-size: 20px;
+	font-weight: 900;
+	padding: 20px 50px;	
+	text-decoration: none;
+	
+}
+.nav-list a:hover{
+	display: block;
+	background-color: rgba(152, 132, 232, 0.55);
+}
+.nav-list .sub-menu{  
+	z-index: 10;	
+	margin: 0;
+  	padding: 0;
+  	list-style: none;
+	display: none;
+	position: absolute;
+	top:70px;
+	left:0px;
+  	width: 280px;
+  	background-color: rgba(152, 132, 232, 0.70);
+}
+.desctop .sub-menu a{
+	border-bottom: 2px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+.nav-list > li:hover .sub-menu {
+  display: block;
+}
+
+/*headindex*/
+.man{
+	display:block;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 200px;
+	height: 290px;
+ 	background-repeat: no-repeat;
+    background-position:50%;
+    background-image: url(../img/man.png);
+}
+/* head*/
+.main{
+	position: fixed;
+    z-index: 100;
+	width:100%;	
+	background-color: rgba(30,30,30, 1.0);
+	border-bottom: 1px solid rgba(3,3,3, 1.0);
+}
+.main a{
+	display:block;
+	color: white;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+	background-repeat: no-repeat;
+    background-position: 30px 50%;
+    background-size: 40px 40px;
+    background-image: url(../img/ico/back2x.png);
+}
+.main a:hover{
+	background-color: rgba(152, 132, 232, 0.50);
+}
+/* //head*/
+/* chat*/
+
+.chat{
+	font-size:0.85em; 
+	color: white;
+	width: 90%;
+	min-height:80vh; 
+	margin-top: 5px;
+	margin-left: 1px;
+	padding:20px;
+	border-radius: 25px;
+	border:1px solid grey;
+	background-color: rgba(0, 0, 0, 0.80);
+}
+.chat-list{
+	width: 95%;
+	min-height:40vh; 
+	max-height:40vh; 
+	padding-left:10px; 
+	border:1px solid rgba(250,255,250, 0.40);
+	overflow-x:none; 
+	overflow-y:auto; 
+	border-radius: 25px;
+	background-color: rgba(0, 0, 0, 0.70);
+}
+.chat h1{
+	margin: 0;
+	margin-bottom: 5px;
+	padding: 0;
+	color:rgba(152, 132, 232, 0.80);
+}
+.chat-list p{
+	margin: 0;
+	padding-top: 0;
+	border-bottom: 1px solid (250,255,250, 0.0);
+}
+.chat-list p b{
+	color:rgba(152, 132, 232, 0.90);
+}
+.chat .form{
+	color:white;
+	margin-top:10px;
+	margin-left: 5px;
+}
+::placeholder {
+    color: rgba(0, 0, 0, 0.70);
+    opacity: 1;
+}
+
+.form input{
+	color:white;
+	padding: 5px;
+	border: none;
+	border-radius: 20px;
+	background-color: rgba(152, 132, 232, 0.75);	
+}
+.form textarea{
+	border: none;
+	margin:5px 15px;
+	padding:20px;
+	max-width:80%;
+	min-width:80%;
+	height:50px; 
+	border-radius: 20px;
+	background-color: rgba(152, 132, 232, 0.75);
+
+}
+.form input[type=text]{
+	padding:20px;
+	margin:5px 15px;
+	margin-bottom:5px;
+}
+.form input[type=button]{
+	width:40%; 
+	padding: 15px;
+	margin-top:10px;
+    margin-left: 15px;
+	border-radius: 25px;
+}
+/* //chat*/
+/* content*/
+.content{
+	width:100%;
+	min-height: 100vh;
+	padding-top:10px;
+	padding-bottom: 10px;
+	background-color: rgba(152, 132, 232, 0.15);
+}
+.list-content{
+	margin: 0;
+	padding:0;
+	list-style: none;
+	width: 85%;
+	min-height: 98vh;	
+	margin: 0 auto;	
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.8);	
+}
+.list-content li{
+	width: 30%;
+	float: left;	
+	margin: 18px;	
+}
+.list-content li a{
+	display: block;
+	font-size: 14px;
+	width: 100%;
+	color:white;
+	padding: 5px 10px;	
+	background-color: rgba(30,30,30, 0.8);
+}
+.list-content a:hover{
+	background-color: rgba(152, 132, 232, 0.40);
+}
+.list-content a h1{
+	font-size: 17px;
+	margin: 0;
+	padding:0;
+	vertical-align: middle;
+	margin: 20px 0px 20px 50px;
+}
+.list-content a h2{
+	font-size: 17px;
+	margin: 0;
+	padding:0;
+	vertical-align: middle;
+}
+/*//content*/
+.galleria{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	min-height: 91.5vh;
+}
+.clearfix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+.desctop {
+	display: block;
+}
+.mobile {
+	display: none;
+}
+
+/*mobil*/
+@media screen and (max-width: 825px) {
+	.desctop {
+		display: none;
+	}
+	.mobile {
+		display: block;
+	}
+	body{
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+	box-sizing:border-box;
+	background:rgba(30,30,30, 1.0);
+}
+.mobile .nav-list{
+	color:white;
+	padding: 0;
+}
+
+.mobile .logo{
+ 	background-repeat: no-repeat;
+    background-position:85% 100%;
+    background-size: 70px 70px;
+    background-image: url(../img/ico/marioRG.svg);
+}
+.mobile .nav-list a{
+	display: block;
+	color:white;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 24px 50px;	
+	text-decoration: none;	
+}
+.mobile .sub-menu li a{
+	padding: 15px 10px;
+	border-bottom: 1px solid rgba(30,30,30, 0.3);
+}
+.mobile .sub-menu{
+	width: 150px;
+}
+.icomenu{
+	background-repeat: no-repeat;
+    background-position:90% 45%;
+    background-size: 30px 30px;
+    background-image: url(../img/ico/p.png);
+}
+.man{
+	bottom: 0;
+	left: 50;
+}
+.chat{
+	width: 87%;
+	font-size:0.8em; 
+}
+.list-content li{
+	float: none;
+	width: 80%;
+	margin: 0 auto;
+
+	margin-right: 12.5%;
+	margin-bottom: 10px;
+}
+div iframe{
+	float: none!important;
+	width:100%!important;
+}
+}

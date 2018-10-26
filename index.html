@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>	
+    <meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+	<title>SmokeProject</title>
+ <script>
+if ('serviceWorker' in navigator) {
+ window.addEventListener('load', function() {  
+  navigator.serviceWorker.register('sw.js').then(
+    function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope); },
+    function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
+</script>
+<link rel="apple-touch-icon" sizes="57x57" href="img/ico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/ico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/ico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/ico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/ico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/ico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/ico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/ico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/ico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/ico/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/ico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/ico/favicon-16x16.png">
+<link rel="manifest" href="manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="img/ico/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--HeadDesctop-->
+	<header class="header desctop">		
+		<nav class="nav">	
+			<ul class="nav-list">
+				<li><a class="logo" href="index.html">.</a></li>
+				<li><a href="lib/chat/chat.html">Chat</a></li>
+				  <li><a href="lib/article/article.html">Article</a>
+					<!--	<ul class="sub-menu">
+							<li><a class="logo a" href="">Hack</a></li>
+							<li><a class="logo a" href="">Trash</a></li>
+							<li><a class="logo a" href="lib/article/mj.html">MJ</a></li>
+							<li><a class="logo a" href="">PS</a></li>
+						</ul>  -->
+				  </li>
+				<li><a href="lib/book/book.html">Book</a></li>
+				<li><a href="lib/Music/music.html">Music</a></li>
+				<li><a href="lib/Gallery/gallery.html">Gallery</a></li>				  
+				<li><a href="lib/SmokeStory/SkmokeStory.html">SmokeStory</a></li>
+				<li><a href="lib/contacts/contacts.html">Contacts</a></li>
+			</ul>
+		</nav>
+	</header>
+<!--//HeadDesctop-->
+<!--mobile-->
+<header class="mobile">
+	<nav class="nav">
+	  <ul class="nav-list">
+		<li><a class="logo" href="index.html">.</a></li>
+		<li><a class="icomenu" href="#">Menu</a>
+			<ul class="sub-menu">
+				<li><a href="lib/chat/chat.html">Chat</a></li>
+				<li><a href="lib/article/article.html">Article</a></li>
+				<li><a href="lib/book/book.html">Book</a></li>
+				<li><a href="lib/Music/music.html">Music</a></li>
+				<li><a href="lib/Gallery/gallery.html">Gallery</a></li>				  
+				<li><a href="lib/SmokeStory/SkmokeStory.html">SmokeStory</a></li>
+				<li><a href="lib/contacts/contacts.html">Contacts</a></li>
+			</ul>
+		</li>
+	  </ul>
+  	</nav>
+</header>
+<!--//mobile-->
+	<main>
+		<a class="man" href="https://www.google.com/">.</a>
+	</main>	
+</body>
+</html>
